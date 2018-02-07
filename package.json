@@ -1,0 +1,39 @@
+{
+  "name": "search-rest-auth",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha 'test/*.js' --timeout 10000",
+    "coverage": "istanbul cover _mocha",
+    "showcoverage": "chromium-browser coverage/lcov-report/index.html"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "curl": "^0.1.4",
+    "curlrequest": "^1.0.1",
+    "debug": "~2.6.9",
+    "express": "^4.15.5",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^2.2.1",
+    "request": "^2.83.0",
+    "serve-favicon": "~2.4.5",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "chai-match": "^1.1.1",
+    "istanbul": "^0.4.5",
+    "lodash": "^4.17.5",
+    "mocha": "^5.0.0",
+    "nock": "^9.1.6"
+  }
+}
